@@ -16,18 +16,33 @@
       background-size:cover;
       height:100vh;
       background-position:relative;
+      font-family: Arial, Helvetica, sans-serif;
   }
   .navbar-brand {
       margin: 20px;
-      padding-left:20px;
+      padding:20px;
       background-color: transparent !important;
-  
     }
   .row
   {
     padding:10px;
   }
-  
+  .btn-primary, .btn-primary:hover{
+      margin:10px;
+      background-color: black;
+  }
+  #aob{
+      padding: 20%;
+  }
+  .img-fluid{
+      max-height:40%;
+  }
+  .card{
+      background-color: transparent;
+      Opacity:0,5;
+      text-align: center;
+      
+  }
   </style>
 </head>
 
@@ -43,10 +58,10 @@ style="background-image:url('close-up-of-black-marble-textured-background.jpg')"
         Contact balise pour aller en bas dans la fiche contact-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                      <a class="navbar-brand" href="#">
-                        <img src="davouj final cmyk.png" alt="" width="500em" height="auto">
+                      <a class="navbar-brand" href="index.html">
+                        <img src="davouj final cmyk.png" alt="logo" width="500em" height="auto">
                       </a>
-              <a class="navbar-brand" href="#">Home</a>
+              <a class="navbar-brand" href="index.html">Home</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
               data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
               aria-label="Toggle navigation">
@@ -55,13 +70,13 @@ style="background-image:url('close-up-of-black-marble-textured-background.jpg')"
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                    <a class="nav-link active" aria-current="page" href="#aob">About Us</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Our Project</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#h2">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -72,7 +87,7 @@ style="background-image:url('close-up-of-black-marble-textured-background.jpg')"
     </header>
     <img src="openspace.jpg" class="img-fluid" alt="...">
     
-    <div class="container-fluid">
+    <div id="aob"class="container-fluid">
             <h2 class="text-center">ABOUT OUR BUSINESS</h2>  
             <!--mettre ds colonne 31-->
             <p class="text-center">Davouj Design aims to turn your vision into reality with our professional and expert team.
@@ -89,15 +104,58 @@ style="background-image:url('close-up-of-black-marble-textured-background.jpg')"
     <div class="container-fluid">        
     <img src="interior_design.jpg" class="img-thumbnail" alt="responsive" >  
     </div>   
-    <h3>Service we offer</h3>
+    <div class="container-fluid">
+        <h3 style="text-align: center;">Service we Offer</h3>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">INTERIOR DESIGNING</h5>
+                  <p class="card-text">Sometimes the little things make all the difference. With our Lighting Design Consultation services, we’ll be able to transform your space and set the mood. Whatever your interior design needs may be, our team of experts and architects are here to make sure you feel at home in the space you live or work in. Contact us today and get started.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">INTERIOR EXECUTION</h5>
+                  <p class="card-text">We make sure that the design execution procedure is undertaken as per the local and global industrial standards and norms. We understand our clients'requirements and ensure that those are implemented in the layout of the interiors.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">FURNISHING</h5>
+                  <p class="card-text">From furnishings and material selection to interior architectural planning, we imbue each space with the owner’s unique style and personality. Brighten up your space with our decorative and functional Spatial Planning that meet the needs of each area. Get in touch with us today to start benefiting from our outstanding services.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">SUPERVISION</h5>
+                  <p class="card-text">Our Pre-Construction Consultation services suit each client’s specific needs, requirements and taste. Our interior designers do everything to reflect our client’s desires and translate those into a design that hits all the right notes. Contact us today to see what we are able to do to transform your space.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+    </div> 
+        <!--service we offer-->   
+            
 
+         </div>
+
+       <!--Grid bootstrap pour les different texte ou cards-->
     
 
-            <!--Grid bootstrap pour les different texte ou cards-->
-
-
-    <div class="container-fluid">  
-    <img src="desk_work_architecte.jpg" class="img-fluid" alt="responsive">
+    <div class="container-fluid no padding">  
+            <div class="row-md-8- center">
+              <div class="col-md-8 ">
+                <img src="desk_work_architecte.jpg" class="img-fluid" alt="responsive">
+              </div>
+         </div>  
     </div>
     <footer>
 
@@ -107,7 +165,7 @@ style="background-image:url('close-up-of-black-marble-textured-background.jpg')"
         <section class="mb-4">
 
     <!--Section heading-->
-        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+        <h2 id="h2"class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
     <!--Section description-->
         <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
         a matter of hours to help you.</p>
